@@ -19,6 +19,6 @@ You can test a fully working demo of this authentication client by downloading t
 
 - [Visual Studio 2015](https://www.visualstudio.com/vs/) - A fully-featured integrated development environment for Android, iOS, Windows, web, and cloud.
 
-## [License](https://github.com/zachyale/queens-sso-auth/master/LICENSE.md)
+## [License](https://github.com/zachyale/queens-sso-auth/blob/master/LICENSE)
 
  MIT © [Zachary Yale](https://github.com/zachyale)
