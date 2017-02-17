@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.authBrowser = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
+            // 
+            // authBrowser
+            // 
+            this.authBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.authBrowser.Location = new System.Drawing.Point(0, 0);
+            this.authBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.authBrowser.Name = "authBrowser";
+            this.authBrowser.Size = new System.Drawing.Size(974, 1179);
+            this.authBrowser.TabIndex = 0;
+            this.authBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.authBrowser_Navigated);
+            this.authBrowser.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.authBrowser_Navigating);
             // 
             // SSO_Auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 450);
+            this.ClientSize = new System.Drawing.Size(974, 1179);
+            this.Controls.Add(this.authBrowser);
             this.Name = "SSO_Auth";
             this.Text = "SSO_Auth";
             this.ResumeLayout(false);
@@ -42,5 +55,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.WebBrowser authBrowser;
     }
 }

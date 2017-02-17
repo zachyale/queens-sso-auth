@@ -16,5 +16,12 @@ namespace queens_sso_auth
         {
             InitializeComponent();
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            // Initialize login pop-up
+            SSO_Auth authScreen = new SSO_Auth(sender);
+            authScreen.Show();
+        }
     }
 }
